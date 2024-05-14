@@ -225,20 +225,3 @@ body {
         font-size: 3rem;
     }
 }
-
-@media (max-width:410px) {
-    .abajo {
-        bottom: 40px;
-        color: bisque;
-    }
-
-
-    .boxf {
-        visibility: visible;
-        position: fixed;
-        height: 100px;
-        width: 100vh;
-        background-color: rgb(146, 75, 0);
-        bottom: 0;
-    }
-}
