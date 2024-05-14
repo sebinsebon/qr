@@ -1,0 +1,244 @@
+.box {
+    visibility: hidden;
+}
+
+* {
+    margin: 0;
+}
+
+#header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5deb3;
+    font-size: 7rem;
+}
+
+H1, p {
+    font-family: josefin sans, sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+.links {
+    display: inline;
+    top: 25vh;
+    position: relative;
+    background-color: rgb(255, 244, 225);
+    border-radius: 15px;
+    padding: 15px;
+    left: 10vh;
+    font-size: 3rem;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.2))
+
+}
+
+.divhead {
+    padding: 90px;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(146, 75, 0), bisque);
+}
+
+.links {
+    font-family: montserrat;
+}
+
+.ch {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.2))
+}
+
+.abajo {
+    background-image: linear-gradient(bisque, rgb(146, 75, 0));
+    color: bisque;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0px 0px 0px;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+body {
+    position:  relative;
+    min-height: 100vh;
+}
+
+.nombres {
+    display: inline;
+}
+
+.boxf {
+    position: relative;
+    visibility: hidden;
+}
+@media (max-width:1795px) {
+        .links {
+            font-size: 2.8rem;
+        }
+}
+
+@media (max-width:1695px) {
+    .links {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width:1595px) {
+    .links {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width:1495px) {
+    .links {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width:1395px) {
+    .links {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:1295px) {
+    .links {
+        font-size: 1.8rem;
+    }
+
+    .ch {
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+@media (max-width:1195px) {
+    .links {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:1095px) {
+    .links {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:995px) {
+    .links {
+        font-size: 1.2rem;
+    }
+
+    .ch {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (max-width:895px) {
+    .links {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:795px) {
+    
+}
+
+@media (max-width:695px) {
+    .links {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:595px) {
+    .links {
+        left: 0;
+        left: 0;
+    }
+}
+
+@media (max-width:468px) {
+    .links {
+        display: flex;
+        
+    }
+}
+
+@media (max-height:780px) {
+    .links{
+        top: 0;
+    }
+
+}
+
+@media (max-height:805px) {
+    .abajo {
+        position: fixed;
+    }
+
+    #curso {
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width:520px) {
+
+}
+
+@media (max-width:420px) {
+    .divhead {
+        position: fixed;
+        justify-content: center;
+        right: 0;
+        left: 0;
+        margin: 0;
+    }
+
+
+
+
+    .box {
+        height: 50vh;
+    }
+
+    #header1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:300px) {
+    #header1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:410px) {
+    .abajo {
+        bottom: 40px;
+        color: bisque;
+    }
+
+
+    .boxf {
+        visibility: visible;
+        position: fixed;
+        height: 100px;
+        width: 100vh;
+        background-color: rgb(146, 75, 0);
+        bottom: 0;
+    }
+}
