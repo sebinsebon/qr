@@ -12,10 +12,13 @@
     align-items: center;
     color: #f5deb3;
     font-size: 7rem;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.2))
+
 }
 
 H1, p {
-    font-family: josefin sans, sans-serif;
+    font-family: josefin sans
+    
 }
 
 body {
@@ -59,7 +62,7 @@ body {
 .abajo {
     background-image: linear-gradient(bisque, rgb(146, 75, 0));
     color: bisque;
-    height: 90px;
+    height: 40px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -82,6 +85,33 @@ body {
     position: relative;
     visibility: hidden;
 }
+
+.nombes {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Posicionamiento vertical centrado */
+    left: 50%; /* Posicionamiento horizontal centrado */
+    transform: translate(-50%, -50%); /* Ajuste para centrado */
+    stroke: aqua;
+    size: 200px;
+    font-size: 5vh;
+    font-family: Jost, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.nombres {
+    font-family: Jost, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    bottom: 0;
+    font-size: 2rem;
+    color: bisque;
+    padding: 6px;
+}
+
+#curso {
+    right: 0;
+    position: absolute;
+}
+
 @media (max-width:1795px) {
         .links {
             font-size: 2.8rem;
@@ -92,6 +122,11 @@ body {
     .links {
         font-size: 2.6rem;
     }
+
+    .nombres {
+        font-size: 1.5rem;
+    }
+    
 }
 
 @media (max-width:1595px) {
@@ -117,11 +152,21 @@ body {
         font-size: 1.8rem;
     }
 
+    .nombres {
+        font-size: 1.1rem;
+    }
+
     .ch {
         height: 100px;
         width: 100px;
     }
 
+    #curso {
+        bottom: 0px;
+        font-size: 1.6rem;
+         position: absolute;
+         right: 0;
+    }
 }
 
 @media (max-width:1195px) {
@@ -165,7 +210,11 @@ body {
 
 @media (max-width:595px) {
     .links {
-        left: 0;
+        display: flex;
+        top: 1vh ;
+        font-size: 20px;
+        margin: 20px;
+        flex-direction: column;
         left: 0;
     }
 }
@@ -174,6 +223,15 @@ body {
     .links {
         display: flex;
         
+    }
+
+    #nombres
+    { 
+        font-size: 0.8rem;
+    }
+
+    #curso{
+        font-size: 1.6rem;
     }
 }
 
@@ -190,13 +248,17 @@ body {
     }
 
     #curso {
+        padding: 6px;
         font-size: 17px;
     }
 }
 
 
 @media (max-width:520px) {
-
+    .nombres
+    {
+        font-size: 1.04rem;
+    }
 }
 
 @media (max-width:420px) {
@@ -223,5 +285,15 @@ body {
 @media (max-width:300px) {
     #header1 {
         font-size: 3rem;
+    }
+}
+
+@media (max-width:380px) {
+    #nombres {
+        font-size: 0.72rem;
+    }
+
+    #curso {
+        font-size: 1.8rem;
     }
 }
